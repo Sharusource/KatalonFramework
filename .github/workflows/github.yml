@@ -12,4 +12,5 @@ jobs:
         uses: katalon-studio/katalon-studio-github-action@v2.2
         with:
           version: "9.4.0"
+          projectPath: '${{ github.workspace }}'
           args: '-retry=0 -testSuitePath="Test Suites/Suite" -browserType="Chrome" -executionProfile="default" -apiKey="7b5ab6de-9ec9-4b01-afad-1ba2a3a12d23" --config -proxy.auth.option=NO_PROXY -proxy.system.option=NO_PROXY -proxy.system.applyToDesiredCapabilities=true -orgID=1444621 -webui.autoUpdateDrivers=true'
